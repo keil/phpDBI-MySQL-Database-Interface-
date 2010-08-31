@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>PHP MySQL Database Interface: Row Klassenreferenz</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css">
+<link href="../../doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Erzeugt von Doxygen 1.5.9 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>Hauptseite</span></a></li>
+      <li><a href="../../namespaces.html"><span>Namensbereiche</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Datenstrukturen</span></a></li>
+      <li><a href="../../files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>Datenstrukturen</span></a></li>
+      <li><a href="../../hierarchy.html"><span>Klassenhierarchie</span></a></li>
+      <li><a href="../../functions.html"><span>Datenstruktur-Elemente</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Row Klassenreferenz</h1><!-- doxytag: class="Row" --><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Öffentliche Methoden</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dda/class_row.html#673c3cbbc5dae7b644d87ba934594ceb">__construct</a> (<a class="el" href="../../dd/d10/class_connection.html">Connection</a> $_connection, $_table, $_primary, $_index, <a class="el" href="../../d3/d42/class_logger.html">Logger</a> $_logger=null)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dda/class_row.html#a5e5e52832ec102b2738440d1afbc39d">__call</a> ($_call, $_arguments)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dda/class_row.html#65d46444c0fbc794119f31534140d41e">select</a> ($_data)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dda/class_row.html#2c7842928e4bbcca7f24faa024c967b1">selectValues</a> (array $_data)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dda/class_row.html#100b3122a56e8dbe837eefbf9ebb6e13">selectAll</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dda/class_row.html#c5720158a6c1b3df3225ba7553efa775">update</a> ($_data, $_value)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dda/class_row.html#38f6e4984f58a1211c5b5e3e4702a948">updateValues</a> (array $_value)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dda/class_row.html#36bc25634ff12c0dcc6646fa61c619e8">accept</a> (<a class="el" href="../../de/de3/interface_row_adapter.html">RowAdapter</a> $_adapter)</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Ausführliche Beschreibung</h2>
+<a class="el" href="../../d5/dda/class_row.html">Row</a> <hr><h2>Beschreibung der Konstruktoren und Destruktoren</h2>
+<a class="anchor" name="673c3cbbc5dae7b644d87ba934594ceb"></a><!-- doxytag: member="Row::__construct" ref="673c3cbbc5dae7b644d87ba934594ceb" args="(Connection $_connection, $_table, $_primary, $_index, Logger $_logger=null)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__construct           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d10/class_connection.html">Connection</a> $&nbsp;</td>
+          <td class="paramname"> <em>_connection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>_table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>_primary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d42/class_logger.html">Logger</a> $&nbsp;</td>
+          <td class="paramname"> <em>_logger</em> = <code>null</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="../../dd/d10/class_connection.html">Connection</a></em>&nbsp;</td><td>$_connection </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$_table </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$_primary </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$_index </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="../../d3/d42/class_logger.html">Logger</a></em>&nbsp;</td><td>$_logger </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr><h2>Dokumentation der Elementfunktionen</h2>
+<a class="anchor" name="a5e5e52832ec102b2738440d1afbc39d"></a><!-- doxytag: member="Row::__call" ref="a5e5e52832ec102b2738440d1afbc39d" args="($_call, $_arguments)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__call           </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>_call</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>_arguments</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+get&lt;FIELD&gt;(); set&lt;FIELD&gt;(&lt;VALUE&gt;) <dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$_call </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$_arguments </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Rückgabe:</b></dt><dd>string </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="36bc25634ff12c0dcc6646fa61c619e8"></a><!-- doxytag: member="Row::accept" ref="36bc25634ff12c0dcc6646fa61c619e8" args="(RowAdapter $_adapter)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">accept           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/de3/interface_row_adapter.html">RowAdapter</a> $&nbsp;</td>
+          <td class="paramname"> <em>_adapter</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="../../de/de3/interface_row_adapter.html">RowAdapter</a></em>&nbsp;</td><td>$_adapter </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Rückgabe:</b></dt><dd>unknown_type </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="65d46444c0fbc794119f31534140d41e"></a><!-- doxytag: member="Row::select" ref="65d46444c0fbc794119f31534140d41e" args="($_data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">select           </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>_data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$_data </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Rückgabe:</b></dt><dd>string </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="100b3122a56e8dbe837eefbf9ebb6e13"></a><!-- doxytag: member="Row::selectAll" ref="100b3122a56e8dbe837eefbf9ebb6e13" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">selectAll           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="return" compact><dt><b>Rückgabe:</b></dt><dd>array </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2c7842928e4bbcca7f24faa024c967b1"></a><!-- doxytag: member="Row::selectValues" ref="2c7842928e4bbcca7f24faa024c967b1" args="(array $_data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">selectValues           </td>
+          <td>(</td>
+          <td class="paramtype">array $&nbsp;</td>
+          <td class="paramname"> <em>_data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>array</em>&nbsp;</td><td>$_data </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Rückgabe:</b></dt><dd>array </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c5720158a6c1b3df3225ba7553efa775"></a><!-- doxytag: member="Row::update" ref="c5720158a6c1b3df3225ba7553efa775" args="($_data, $_value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">update           </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>_value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$_data </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$_value </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="38f6e4984f58a1211c5b5e3e4702a948"></a><!-- doxytag: member="Row::updateValues" ref="38f6e4984f58a1211c5b5e3e4702a948" args="(array $_value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">updateValues           </td>
+          <td>(</td>
+          <td class="paramtype">array $&nbsp;</td>
+          <td class="paramname"> <em>_value</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>array</em>&nbsp;</td><td>$_value </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+<li>S:/Documents/Projekte/phpDBI/workbench/0.02/classes/model/<a class="el" href="../../dc/db7/_row_8class_8php.html">Row.class.php</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Erzeugt am Fri Dec 25 15:32:56 2009 für PHP MySQL Database Interface von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="../../doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.9 </small></address>
+</body>
+</html>

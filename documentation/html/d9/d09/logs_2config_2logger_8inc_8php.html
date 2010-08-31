@@ -1,0 +1,848 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>PHP MySQL Database Interface: S:/Documents/Projekte/phpDBI/workbench/0.02/logs/config/logger.inc.php-Dateireferenz</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css">
+<link href="../../doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Erzeugt von Doxygen 1.5.9 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>Hauptseite</span></a></li>
+      <li><a href="../../namespaces.html"><span>Namensbereiche</span></a></li>
+      <li><a href="../../annotated.html"><span>Datenstrukturen</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>Auflistung&nbsp;der&nbsp;Dateien</span></a></li>
+      <li><a href="../../globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>S:/Documents/Projekte/phpDBI/workbench/0.02/logs/config/logger.inc.php-Dateireferenz</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Namensbereiche</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2d/namespacephp2log.html">php2log</a></td></tr>
+
+<tr><td colspan="2"><br><h2>Aufzählungen</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#3f872a189f1ec50f238e98dcc6e0b337">DATABASE_HOST</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#7303c8701b92326feadd5f3e56af1bd6">DATABASE</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#f8ea9774d043d4af0e842f657c7480da">DATABASE_TABLE</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#42c433cf313d8dfad8d90d46d55f418b">DATABASE_USERNAME</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#e860ee132bdc151225cf41eb4e5cafc4">DATABASE_PASSWORD</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#5311479760e22e3198882e9d49d9a9eb">TIMEZONE</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#80e6c1dc73ec180b366d47a51105820b">ERROR_REPORTING</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#aac84ce040c516be0a9bd3de4fa28f85">DISPLAY_ERRORS</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#1a6f4f9fcfb11e86bf119f48eb9b0fb7">SMARTY_DIR</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#044bea21e1b12aa181a80860fac53d91">SMARTY_CORE_DIR</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#7a80fbfe16a7b3bfd37435678020e2d1">TEMPLATE_DIR</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#9ece9aaf5041a7e70b25473da831892f">COMPILE_DIR</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#11850c770251d64baef6a55841c277c1">CACHE_DIR</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#14c02f5d8fb9bde2b945ded24f97c836">CONFIG_DIR</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#de0c1599953f425065e5afd8cca88999">PLUGINS_DIR</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#67e4d1ed3d20c48c4cdea0f984190db1">SECURITY_DIR</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#6f11e6d79ee859a34d70fafdaba5dd94">THRUSTED_DIR</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#8cbfaad21bdb9cd4a5659579a7c03664">DEBUGGING</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#ca668ca1bb10d9026e71b8676b327bdd">DEBUGGING_TEMPLATE</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#c66df046a2ef4369ab80d9f474db1327">DEBUGGING_CTRL</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#7ff030d7f2ab9eef7a2b5c6fb7900e34">COMPILE_CHECK</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#e43c509e99798d8b81a9938f22487b39">FORCE_COMPILE</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#01469ee7646955f78b94e6512540ac7b">COMPILE_ID</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#4270f5ec8427cd48436a4e606adbb9bc">USE_SUB_DIRS</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#fb2129430dce93e8e6db56a2b2b94082">CACHING</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#a49dde41fec37bfc778c42bfff4c3563">CACHE_LIFETIME</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#45d58df45f008961f4cde58ae24a8033">CACHE_CHECK</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#30d71f83b8321b35e11e18c91fd67e39">PHP_HANDLING</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#20e2e6a016d1cbf1e4cfaba186ae434f">SECURITY</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#3216ef4b93d5122adf1ef60b970e878a">SECURITY_SETTINGS</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#797f9fb86ecd9ee5fb4fd92872951a43">LEFT_DELIMITER</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#b94b4468244c563178ad3c32f7d3fb05">RIGHT_DELIMITER</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#2c28558e7b44297a27d4fa47a644094d">REQUEST_VARS_ORDER</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#7c73d04b580f6f60dff52beecba7dba2">REQUEST_AUTO_GLOBALS</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#b841bc5341d94ee1b1b621161c56fa7f">DEFAULT_MODIFIER</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#4be7b073ba266ed4b47c80fba10ccf90">DEFAULT_RESOURCE</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#89dafbe0044175c7a521b6af5335a4d6">CACHE_HANDLER</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#a17bc87ec6507323bed3747eeec2f2b3">AUTOLOAD_FILTERS</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#fa90fded759035203df52e01a47866ca">CONFIG_OVERRIDE</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#390562f637e700146dd8652566a728c1">CONFIG_BOOLEANIZE</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#872aedb9e1e9e379b38d6ba1f2c70bed">CONFIG_READ_HIDDEN</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#cbd30460020cf30a25d41361e7f68c29">CONFIG_FIX_NEWLINE</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#2ee407247d6dfc3472b2096fae904565">TEMPLATE_HANDLER</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#3587a1198029ffb2ce628e964185b7b2">COMPILER_FILE</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#26146f58a1112272f551aeb7499eb40a">COMPILER_CLASS</a> </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#73b52630e613c18a2bdfc509f0821e01">CONFIG_CLASS</a> </td></tr>
+
+</table>
+<hr><h2>Dokumentation der Aufzählungstypen</h2>
+<a class="anchor" name="a17bc87ec6507323bed3747eeec2f2b3"></a><!-- doxytag: member="logger.inc.php::AUTOLOAD_FILTERS" ref="a17bc87ec6507323bed3747eeec2f2b3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#a17bc87ec6507323bed3747eeec2f2b3">AUTOLOAD_FILTERS</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+AUTOLOAD_FILTERS an array of filters smarty should load on startup<p>
+DEFAULT: null 
+</div>
+</div><p>
+<a class="anchor" name="45d58df45f008961f4cde58ae24a8033"></a><!-- doxytag: member="logger.inc.php::CACHE_CHECK" ref="45d58df45f008961f4cde58ae24a8033" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#45d58df45f008961f4cde58ae24a8033">CACHE_CHECK</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+CACHE_CHECK sends 403 Not Modified insted of content<p>
+DEFAULT: false 
+</div>
+</div><p>
+<a class="anchor" name="11850c770251d64baef6a55841c277c1"></a><!-- doxytag: member="logger.inc.php::CACHE_DIR" ref="11850c770251d64baef6a55841c277c1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#11850c770251d64baef6a55841c277c1">CACHE_DIR</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+CACHE_DIR the cache directory 
+</div>
+</div><p>
+<a class="anchor" name="89dafbe0044175c7a521b6af5335a4d6"></a><!-- doxytag: member="logger.inc.php::CACHE_HANDLER" ref="89dafbe0044175c7a521b6af5335a4d6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#89dafbe0044175c7a521b6af5335a4d6">CACHE_HANDLER</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+CACHE_HANDLER sets an function for chache handling<p>
+DEFAULT: null 
+</div>
+</div><p>
+<a class="anchor" name="a49dde41fec37bfc778c42bfff4c3563"></a><!-- doxytag: member="logger.inc.php::CACHE_LIFETIME" ref="a49dde41fec37bfc778c42bfff4c3563" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#a49dde41fec37bfc778c42bfff4c3563">CACHE_LIFETIME</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+CACHE_LIFETIME lifetime (sec.) of the cache files<p>
+minute - 60 houre - 3600 day - 86400 week - 604800<p>
+DEFAULT: 0 
+</div>
+</div><p>
+<a class="anchor" name="fb2129430dce93e8e6db56a2b2b94082"></a><!-- doxytag: member="logger.inc.php::CACHING" ref="fb2129430dce93e8e6db56a2b2b94082" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#fb2129430dce93e8e6db56a2b2b94082">CACHING</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+CACHING sets an chaching mode 0 - disabled 1 - use current $cache_lifetime 2 - use $cache_lifetime when file is created<p>
+DEFAULT: 0 
+</div>
+</div><p>
+<a class="anchor" name="7ff030d7f2ab9eef7a2b5c6fb7900e34"></a><!-- doxytag: member="logger.inc.php::COMPILE_CHECK" ref="7ff030d7f2ab9eef7a2b5c6fb7900e34" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#7ff030d7f2ab9eef7a2b5c6fb7900e34">COMPILE_CHECK</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+COMPILE_CHECK checks if an template has been modified DEFAULT: false 
+</div>
+</div><p>
+<a class="anchor" name="9ece9aaf5041a7e70b25473da831892f"></a><!-- doxytag: member="logger.inc.php::COMPILE_DIR" ref="9ece9aaf5041a7e70b25473da831892f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#9ece9aaf5041a7e70b25473da831892f">COMPILE_DIR</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+COMPILE_DIR the template compile directory 
+</div>
+</div><p>
+<a class="anchor" name="01469ee7646955f78b94e6512540ac7b"></a><!-- doxytag: member="logger.inc.php::COMPILE_ID" ref="01469ee7646955f78b94e6512540ac7b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#01469ee7646955f78b94e6512540ac7b">COMPILE_ID</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+COMPILE_ID sets an id for diferent kinds of template versions DEFAULT: '' 
+</div>
+</div><p>
+<a class="anchor" name="26146f58a1112272f551aeb7499eb40a"></a><!-- doxytag: member="logger.inc.php::COMPILER_CLASS" ref="26146f58a1112272f551aeb7499eb40a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#26146f58a1112272f551aeb7499eb40a">COMPILER_CLASS</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+COMPILER_CLASS the class for compiling the templates<p>
+DEFAULT: <a class="el" href="../../d8/d91/class_smarty___compiler.html">Smarty_Compiler</a> 
+</div>
+</div><p>
+<a class="anchor" name="3587a1198029ffb2ce628e964185b7b2"></a><!-- doxytag: member="logger.inc.php::COMPILER_FILE" ref="3587a1198029ffb2ce628e964185b7b2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#3587a1198029ffb2ce628e964185b7b2">COMPILER_FILE</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+COMPILER_FILE the name of the <a class="el" href="../../d8/d91/class_smarty___compiler.html">Smarty_Compiler</a><p>
+DEFAULT: <a class="el" href="../../db/d1a/_smarty___compiler_8class_8php.html">Smarty_Compiler.class.php</a> 
+</div>
+</div><p>
+<a class="anchor" name="390562f637e700146dd8652566a728c1"></a><!-- doxytag: member="logger.inc.php::CONFIG_BOOLEANIZE" ref="390562f637e700146dd8652566a728c1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#390562f637e700146dd8652566a728c1">CONFIG_BOOLEANIZE</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+CONFIG_BOOLEANIZE converts automaticla value types of on/off yes/no to true/false<p>
+DEFAULT: false 
+</div>
+</div><p>
+<a class="anchor" name="73b52630e613c18a2bdfc509f0821e01"></a><!-- doxytag: member="logger.inc.php::CONFIG_CLASS" ref="73b52630e613c18a2bdfc509f0821e01" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#73b52630e613c18a2bdfc509f0821e01">CONFIG_CLASS</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+CONFIG_CLASS the class to load config files<p>
+DEFAULT: <a class="el" href="../../d2/d33/class_config___file.html">Config_File</a> 
+</div>
+</div><p>
+<a class="anchor" name="14c02f5d8fb9bde2b945ded24f97c836"></a><!-- doxytag: member="logger.inc.php::CONFIG_DIR" ref="14c02f5d8fb9bde2b945ded24f97c836" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#14c02f5d8fb9bde2b945ded24f97c836">CONFIG_DIR</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+CONFIG_DIR the smarty sonfig directory 
+</div>
+</div><p>
+<a class="anchor" name="cbd30460020cf30a25d41361e7f68c29"></a><!-- doxytag: member="logger.inc.php::CONFIG_FIX_NEWLINE" ref="cbd30460020cf30a25d41361e7f68c29" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#cbd30460020cf30a25d41361e7f68c29">CONFIG_FIX_NEWLINE</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+CONFIG_FIX_NEWLINE converts <br>
+ and  to <br>
+<p>
+DEFAULT: true 
+</div>
+</div><p>
+<a class="anchor" name="fa90fded759035203df52e01a47866ca"></a><!-- doxytag: member="logger.inc.php::CONFIG_OVERRIDE" ref="fa90fded759035203df52e01a47866ca" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#fa90fded759035203df52e01a47866ca">CONFIG_OVERRIDE</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+CONFIG_OVERRIDE override configurations with the same name else the values are pushed into an array<p>
+DEFAULT: true 
+</div>
+</div><p>
+<a class="anchor" name="872aedb9e1e9e379b38d6ba1f2c70bed"></a><!-- doxytag: member="logger.inc.php::CONFIG_READ_HIDDEN" ref="872aedb9e1e9e379b38d6ba1f2c70bed" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#872aedb9e1e9e379b38d6ba1f2c70bed">CONFIG_READ_HIDDEN</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+CONFIG_READ_HIDDEN tells smarty if hiddem sections in the configuration file can be red<p>
+DEFAULT: false 
+</div>
+</div><p>
+<a class="anchor" name="7303c8701b92326feadd5f3e56af1bd6"></a><!-- doxytag: member="logger.inc.php::DATABASE" ref="7303c8701b92326feadd5f3e56af1bd6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d3f/classes_2logger_2logger_8inc_8php.html#7303c8701b92326feadd5f3e56af1bd6">DATABASE</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="3f872a189f1ec50f238e98dcc6e0b337"></a><!-- doxytag: member="logger.inc.php::DATABASE_HOST" ref="3f872a189f1ec50f238e98dcc6e0b337" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d3f/classes_2logger_2logger_8inc_8php.html#3f872a189f1ec50f238e98dcc6e0b337">DATABASE_HOST</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="e860ee132bdc151225cf41eb4e5cafc4"></a><!-- doxytag: member="logger.inc.php::DATABASE_PASSWORD" ref="e860ee132bdc151225cf41eb4e5cafc4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d3f/classes_2logger_2logger_8inc_8php.html#e860ee132bdc151225cf41eb4e5cafc4">DATABASE_PASSWORD</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="f8ea9774d043d4af0e842f657c7480da"></a><!-- doxytag: member="logger.inc.php::DATABASE_TABLE" ref="f8ea9774d043d4af0e842f657c7480da" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d3f/classes_2logger_2logger_8inc_8php.html#f8ea9774d043d4af0e842f657c7480da">DATABASE_TABLE</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="42c433cf313d8dfad8d90d46d55f418b"></a><!-- doxytag: member="logger.inc.php::DATABASE_USERNAME" ref="42c433cf313d8dfad8d90d46d55f418b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d3f/classes_2logger_2logger_8inc_8php.html#42c433cf313d8dfad8d90d46d55f418b">DATABASE_USERNAME</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="8cbfaad21bdb9cd4a5659579a7c03664"></a><!-- doxytag: member="logger.inc.php::DEBUGGING" ref="8cbfaad21bdb9cd4a5659579a7c03664" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#8cbfaad21bdb9cd4a5659579a7c03664">DEBUGGING</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+DEBUGGING enables the debugging console DEFAULT: false 
+</div>
+</div><p>
+<a class="anchor" name="c66df046a2ef4369ab80d9f474db1327"></a><!-- doxytag: member="logger.inc.php::DEBUGGING_CTRL" ref="c66df046a2ef4369ab80d9f474db1327" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#c66df046a2ef4369ab80d9f474db1327">DEBUGGING_CTRL</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+DEBUGGING_CTRL open debugging conole by URL VALUES: NONE, URL (SMARTY_DEBUG) DEFAULT: NONE 
+</div>
+</div><p>
+<a class="anchor" name="ca668ca1bb10d9026e71b8676b327bdd"></a><!-- doxytag: member="logger.inc.php::DEBUGGING_TEMPLATE" ref="ca668ca1bb10d9026e71b8676b327bdd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#ca668ca1bb10d9026e71b8676b327bdd">DEBUGGING_TEMPLATE</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+DEBUGGING_TEMPLATE name of the debugging template DEFAULT: debug.tpl 
+</div>
+</div><p>
+<a class="anchor" name="b841bc5341d94ee1b1b621161c56fa7f"></a><!-- doxytag: member="logger.inc.php::DEFAULT_MODIFIER" ref="b841bc5341d94ee1b1b621161c56fa7f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#b841bc5341d94ee1b1b621161c56fa7f">DEFAULT_MODIFIER</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+DEFAULT_MODIFIER array of modifiers to applay<p>
+DEFAULT: null 
+</div>
+</div><p>
+<a class="anchor" name="4be7b073ba266ed4b47c80fba10ccf90"></a><!-- doxytag: member="logger.inc.php::DEFAULT_RESOURCE" ref="4be7b073ba266ed4b47c80fba10ccf90" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#4be7b073ba266ed4b47c80fba10ccf90">DEFAULT_RESOURCE</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+DEFAULT_RESOURCE sets the default type to use by including include('index.tpl') instead of include('file:index.tpl')<p>
+DEFAULT: file 
+</div>
+</div><p>
+<a class="anchor" name="aac84ce040c516be0a9bd3de4fa28f85"></a><!-- doxytag: member="logger.inc.php::DISPLAY_ERRORS" ref="aac84ce040c516be0a9bd3de4fa28f85" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#aac84ce040c516be0a9bd3de4fa28f85">DISPLAY_ERRORS</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+DISPLAY-REPORTING<p>
+DEFAULT: false; 
+</div>
+</div><p>
+<a class="anchor" name="80e6c1dc73ec180b366d47a51105820b"></a><!-- doxytag: member="logger.inc.php::ERROR_REPORTING" ref="80e6c1dc73ec180b366d47a51105820b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#80e6c1dc73ec180b366d47a51105820b">ERROR_REPORTING</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+ERROR-REPORTING LEVEL<p>
+Bitwert Konstante ---------------------------- 0 DISABLED 1 E_ERROR 2 E_WARNING 4 E_PARSE 8 E_NOTICE 16 E_CORE_ERROR 32 E_CORE_WARNING 64 E_COMPILE_ERROR 128 E_COMPILE_WARNING 256 E_USER_ERROR 512 E_USER_WARNING 1024 E_USER_NOTICE 6143 E_ALL 2048 E_STRICT<p>
+DEFAULT: DISABLED 
+</div>
+</div><p>
+<a class="anchor" name="e43c509e99798d8b81a9938f22487b39"></a><!-- doxytag: member="logger.inc.php::FORCE_COMPILE" ref="e43c509e99798d8b81a9938f22487b39" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#e43c509e99798d8b81a9938f22487b39">FORCE_COMPILE</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+FORCE_COMPILE force compile on every request DEFAULT: false 
+</div>
+</div><p>
+<a class="anchor" name="797f9fb86ecd9ee5fb4fd92872951a43"></a><!-- doxytag: member="logger.inc.php::LEFT_DELIMITER" ref="797f9fb86ecd9ee5fb4fd92872951a43" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#797f9fb86ecd9ee5fb4fd92872951a43">LEFT_DELIMITER</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+LEFT_DELIMITER left template delimiter<p>
+DEFAULT: { 
+</div>
+</div><p>
+<a class="anchor" name="30d71f83b8321b35e11e18c91fd67e39"></a><!-- doxytag: member="logger.inc.php::PHP_HANDLING" ref="30d71f83b8321b35e11e18c91fd67e39" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#30d71f83b8321b35e11e18c91fd67e39">PHP_HANDLING</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+PHP_HANDLING sets how to handel php tag's ({php} .. {/php})<p>
+SMARTY_PHP_PASSTHRU - print tags as plain text SMARTY_PHP_QUOTE - quote als html SMARTY_PHP_REMOVE - remove SMARTY_PHP_ALLOW - exceute als php code<p>
+DEFAULT: SMARTY_PHP_PASSTHRU 
+</div>
+</div><p>
+<a class="anchor" name="de0c1599953f425065e5afd8cca88999"></a><!-- doxytag: member="logger.inc.php::PLUGINS_DIR" ref="de0c1599953f425065e5afd8cca88999" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#de0c1599953f425065e5afd8cca88999">PLUGINS_DIR</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+PLUGINS_DIR the smarty plugin directory 
+</div>
+</div><p>
+<a class="anchor" name="7c73d04b580f6f60dff52beecba7dba2"></a><!-- doxytag: member="logger.inc.php::REQUEST_AUTO_GLOBALS" ref="7c73d04b580f6f60dff52beecba7dba2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#7c73d04b580f6f60dff52beecba7dba2">REQUEST_AUTO_GLOBALS</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+REQUEST_AUTO_GLOBALS use: false - $HTTP_*_VAR[] true - $_*[]<p>
+DEFAULT: false 
+</div>
+</div><p>
+<a class="anchor" name="2c28558e7b44297a27d4fa47a644094d"></a><!-- doxytag: member="logger.inc.php::REQUEST_VARS_ORDER" ref="2c28558e7b44297a27d4fa47a644094d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#2c28558e7b44297a27d4fa47a644094d">REQUEST_VARS_ORDER</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+REQUEST_VARS_ORDER request order of variables<p>
+DEFAULT: EGPCS 
+</div>
+</div><p>
+<a class="anchor" name="b94b4468244c563178ad3c32f7d3fb05"></a><!-- doxytag: member="logger.inc.php::RIGHT_DELIMITER" ref="b94b4468244c563178ad3c32f7d3fb05" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#b94b4468244c563178ad3c32f7d3fb05">RIGHT_DELIMITER</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+RIGHT_DELIMITER right template delimiter<p>
+DEFAULT: } 
+</div>
+</div><p>
+<a class="anchor" name="20e2e6a016d1cbf1e4cfaba186ae434f"></a><!-- doxytag: member="logger.inc.php::SECURITY" ref="20e2e6a016d1cbf1e4cfaba186ae434f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#20e2e6a016d1cbf1e4cfaba186ae434f">SECURITY</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+SECURITY enables security settings in templates<p>
+DEFAULT: false 
+</div>
+</div><p>
+<a class="anchor" name="67e4d1ed3d20c48c4cdea0f984190db1"></a><!-- doxytag: member="logger.inc.php::SECURITY_DIR" ref="67e4d1ed3d20c48c4cdea0f984190db1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#67e4d1ed3d20c48c4cdea0f984190db1">SECURITY_DIR</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+SECURITY_DIR the smarty security directory 
+</div>
+</div><p>
+<a class="anchor" name="3216ef4b93d5122adf1ef60b970e878a"></a><!-- doxytag: member="logger.inc.php::SECURITY_SETTINGS" ref="3216ef4b93d5122adf1ef60b970e878a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#3216ef4b93d5122adf1ef60b970e878a">SECURITY_SETTINGS</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+SECURITY_SETTINGS sets an array with security settings use when securits is true DEFAULT: null 
+</div>
+</div><p>
+<a class="anchor" name="044bea21e1b12aa181a80860fac53d91"></a><!-- doxytag: member="logger.inc.php::SMARTY_CORE_DIR" ref="044bea21e1b12aa181a80860fac53d91" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#044bea21e1b12aa181a80860fac53d91">SMARTY_CORE_DIR</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+SMARTY_CORE_DIR the smarty core directory 
+</div>
+</div><p>
+<a class="anchor" name="1a6f4f9fcfb11e86bf119f48eb9b0fb7"></a><!-- doxytag: member="logger.inc.php::SMARTY_DIR" ref="1a6f4f9fcfb11e86bf119f48eb9b0fb7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#1a6f4f9fcfb11e86bf119f48eb9b0fb7">SMARTY_DIR</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+SMARTY_DIR the smarty source directory 
+</div>
+</div><p>
+<a class="anchor" name="7a80fbfe16a7b3bfd37435678020e2d1"></a><!-- doxytag: member="logger.inc.php::TEMPLATE_DIR" ref="7a80fbfe16a7b3bfd37435678020e2d1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#7a80fbfe16a7b3bfd37435678020e2d1">TEMPLATE_DIR</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+TEMPLATE_DIR rhe template directory 
+</div>
+</div><p>
+<a class="anchor" name="2ee407247d6dfc3472b2096fae904565"></a><!-- doxytag: member="logger.inc.php::TEMPLATE_HANDLER" ref="2ee407247d6dfc3472b2096fae904565" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#2ee407247d6dfc3472b2096fae904565">TEMPLATE_HANDLER</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+TEMPLATE_HANDLER this resource is called if an template can not be fount 
+</div>
+</div><p>
+<a class="anchor" name="6f11e6d79ee859a34d70fafdaba5dd94"></a><!-- doxytag: member="logger.inc.php::THRUSTED_DIR" ref="6f11e6d79ee859a34d70fafdaba5dd94" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#6f11e6d79ee859a34d70fafdaba5dd94">THRUSTED_DIR</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+THRUSTED_DIR the smarty thrusted directory 
+</div>
+</div><p>
+<a class="anchor" name="5311479760e22e3198882e9d49d9a9eb"></a><!-- doxytag: member="logger.inc.php::TIMEZONE" ref="5311479760e22e3198882e9d49d9a9eb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#5311479760e22e3198882e9d49d9a9eb">TIMEZONE</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+TIMEZONE<p>
+DEFAULT: Europe/Berlin; 
+</div>
+</div><p>
+<a class="anchor" name="4270f5ec8427cd48436a4e606adbb9bc"></a><!-- doxytag: member="logger.inc.php::USE_SUB_DIRS" ref="4270f5ec8427cd48436a4e606adbb9bc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d09/logs_2config_2logger_8inc_8php.html#4270f5ec8427cd48436a4e606adbb9bc">USE_SUB_DIRS</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+CACHE_CHECK use subdirs in TEMPLATE_DIR DEFAULT: false 
+</div>
+</div><p>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Erzeugt am Fri Dec 25 15:32:54 2009 für PHP MySQL Database Interface von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="../../doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.9 </small></address>
+</body>
+</html>

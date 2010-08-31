@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>PHP MySQL Database Interface: Connection Klassenreferenz</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css">
+<link href="../../doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Erzeugt von Doxygen 1.5.9 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>Hauptseite</span></a></li>
+      <li><a href="../../namespaces.html"><span>Namensbereiche</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Datenstrukturen</span></a></li>
+      <li><a href="../../files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>Datenstrukturen</span></a></li>
+      <li><a href="../../hierarchy.html"><span>Klassenhierarchie</span></a></li>
+      <li><a href="../../functions.html"><span>Datenstruktur-Elemente</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Connection Klassenreferenz</h1><!-- doxytag: class="Connection" --><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Öffentliche Methoden</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d10/class_connection.html#8dbdc0641d144c38b433db90e972bd46">__construct</a> (<a class="el" href="../../d7/dec/class_host.html">Host</a> $_host, $_database, <a class="el" href="../../de/d7d/class_credential.html">Credential</a> $_credential, <a class="el" href="../../d3/d42/class_logger.html">Logger</a> $_logger=null)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d10/class_connection.html#421831a265621325e1fdd19aace0c758">__destruct</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d10/class_connection.html#9abc663c289dac7bfc50a6d116dbad73">send</a> ($_sql)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d10/class_connection.html#221938e2857977786b01b11eabcd59d5">escape</a> ($_sql)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d10/class_connection.html#c73f1d8cddbdfc35ca442189378a073c">getInsertID</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d10/class_connection.html#66e79bdaa60aa59bde68a5d1c8aa51fc">getAffectedRows</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d10/class_connection.html#bc2e4b870a2b26a65cbc3b4706c0a155">getNumRows</a> ($_result)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d10/class_connection.html#8d629a5ed2026f95d79ad52d122f1d3e">getNumFields</a> ($_result)</td></tr>
+
+</table>
+<hr><h2>Beschreibung der Konstruktoren und Destruktoren</h2>
+<a class="anchor" name="8dbdc0641d144c38b433db90e972bd46"></a><!-- doxytag: member="Connection::__construct" ref="8dbdc0641d144c38b433db90e972bd46" args="(Host $_host, $_database, Credential $_credential, Logger $_logger=null)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__construct           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/dec/class_host.html">Host</a> $&nbsp;</td>
+          <td class="paramname"> <em>_host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>_database</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d7d/class_credential.html">Credential</a> $&nbsp;</td>
+          <td class="paramname"> <em>_credential</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d42/class_logger.html">Logger</a> $&nbsp;</td>
+          <td class="paramname"> <em>_logger</em> = <code>null</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="../../d7/dec/class_host.html">Host</a></em>&nbsp;</td><td>$_host </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$_database </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="../../de/d7d/class_credential.html">Credential</a></em>&nbsp;</td><td>$_credential </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="../../d3/d42/class_logger.html">Logger</a></em>&nbsp;</td><td>$_logger </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="421831a265621325e1fdd19aace0c758"></a><!-- doxytag: member="Connection::__destruct" ref="421831a265621325e1fdd19aace0c758" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__destruct           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr><h2>Dokumentation der Elementfunktionen</h2>
+<a class="anchor" name="221938e2857977786b01b11eabcd59d5"></a><!-- doxytag: member="Connection::escape" ref="221938e2857977786b01b11eabcd59d5" args="($_sql)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">escape           </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>_sql</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+escape an sql value <dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$_sql </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Rückgabe:</b></dt><dd>string </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="66e79bdaa60aa59bde68a5d1c8aa51fc"></a><!-- doxytag: member="Connection::getAffectedRows" ref="66e79bdaa60aa59bde68a5d1c8aa51fc" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">getAffectedRows           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+get the number of affected rows by the last statement <dl class="return" compact><dt><b>Rückgabe:</b></dt><dd>number </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c73f1d8cddbdfc35ca442189378a073c"></a><!-- doxytag: member="Connection::getInsertID" ref="c73f1d8cddbdfc35ca442189378a073c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">getInsertID           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+get the createt index during an inseration <dl class="return" compact><dt><b>Rückgabe:</b></dt><dd>number </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8d629a5ed2026f95d79ad52d122f1d3e"></a><!-- doxytag: member="Connection::getNumFields" ref="8d629a5ed2026f95d79ad52d122f1d3e" args="($_result)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">getNumFields           </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>_result</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+get the number of fields in an sql result <dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>resource</em>&nbsp;</td><td>$_result </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Rückgabe:</b></dt><dd>number </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="bc2e4b870a2b26a65cbc3b4706c0a155"></a><!-- doxytag: member="Connection::getNumRows" ref="bc2e4b870a2b26a65cbc3b4706c0a155" args="($_result)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">getNumRows           </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>_result</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+get the number of rows in an sql result <dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>resource</em>&nbsp;</td><td>$_result </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Rückgabe:</b></dt><dd>number </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9abc663c289dac7bfc50a6d116dbad73"></a><!-- doxytag: member="Connection::send" ref="9abc663c289dac7bfc50a6d116dbad73" args="($_sql)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">send           </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>_sql</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+send an sql statement to the database engine <dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$_sql </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Rückgabe:</b></dt><dd>resource </dd></dl>
+
+</div>
+</div><p>
+<hr>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+<li>S:/Documents/Projekte/phpDBI/workbench/0.02/classes/controller/<a class="el" href="../../db/de2/_connection_8class_8php.html">Connection.class.php</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Erzeugt am Fri Dec 25 15:32:56 2009 für PHP MySQL Database Interface von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="../../doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.9 </small></address>
+</body>
+</html>
